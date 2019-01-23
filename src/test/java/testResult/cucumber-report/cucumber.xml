@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="11.805712">
+<testcase classname="Login into Pregnancy Plus Application" name="Login using valid username and valid password and check daily text" time="11.805712">
+<failure message="org.openqa.selenium.WebDriverException: No command or response codec has been defined. Unable to proceed&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'&#10;System info: host: 'MACHINE-102', ip: '192.168.5.102', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_161'&#10;Driver info: driver.version: RemoteWebDriver&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:148)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)&#13;&#10;&#9;at org.openqa.selenium.By$ById.findElement(By.java:188)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at core.generic.WrapperFunctions.mobileClick(WrapperFunctions.java:848)&#13;&#10;&#9;at com.face.pageFactory.PPlusLoginPage.clickOnNoLoginBtn(PPlusLoginPage.java:26)&#13;&#10;&#9;at com.face.stepDefinitions.PPlusLogin.Click_On_Login_button(PPlusLogin.java:27)&#13;&#10;&#9;at ✽.Given Click On Login button(PPlusComparison.feature:31)&#13;&#10;"><![CDATA[Given Click On Login button.................................................failed
+When Click on Ok Button.....................................................skipped
+When Enter the User Name dev_qa@email.com...................................skipped
+When Enter the Password 12345678............................................skipped
+When Click on Continue Button...............................................skipped
+When Click on More tab......................................................skipped
+Then Click on Hospital Bag tab..............................................skipped
+Then Click on Mother's Bag tab..............................................skipped
+Then Click on Birth Plan....................................................skipped
+Then Click on Book Magazine.................................................skipped
+Then Click on Breast Pads...................................................skipped
+Then Click on My Items tab..................................................skipped
+Then Enter the text in Add your item here text box Shoping..................skipped
+Then Deselects checkbox Birth Plan..........................................skipped
+Then Deselects checkbox Book Magazine.......................................skipped
+Then Deselects checkbox Breast Pads.........................................skipped
+Then Click on Back arrow....................................................skipped
+Then Click on Partners bag tab..............................................skipped
+Then Click on book Magazine tab.............................................skipped
+Then Click on Change of Cloths..............................................skipped
+Then Click on Comfortable Shoes.............................................skipped
+Then Click on My Items tab..................................................skipped
+Then Enter the text in Add your item here text box Shoping..................skipped
+Then Click on Deselects checkbox Book Magazine..............................skipped
+Then Click on Deselects checkbox Change of Cloths...........................skipped
+Then Click on Deselects checkbox Comfortable Shoes..........................skipped
+Then Click on Back arrow....................................................skipped
+Then Click on Babys bag tab.................................................skipped
+Then Click on Three in All tab..............................................skipped
+Then Click on Three Muslin Cloths...........................................skipped
+Then Click on Bibs tab......................................................skipped
+Then Click on My Items tab..................................................skipped
+Then Enter the text in Add your item here text box Shoping..................skipped
+Then Click on Deselects checkbox Three in All tab...........................skipped
+Then Click on Deselects checkbox Three Muslin Cloths........................skipped
+Then Click on Deselects checkbox Muslin Cloths..............................skipped
+Then Click on Back arrow....................................................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: No command or response codec has been defined. Unable to proceed
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'MACHINE-102', ip: '192.168.5.102', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_161'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:148)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at core.generic.WrapperFunctions.mobileClick(WrapperFunctions.java:848)
+	at com.face.pageFactory.PPlusLoginPage.clickOnNoLoginBtn(PPlusLoginPage.java:26)
+	at com.face.stepDefinitions.PPlusLogin.Click_On_Login_button(PPlusLogin.java:27)
+	at ✽.Given Click On Login button(PPlusComparison.feature:31)
+]]></failure>
+</testcase>
+</testsuite>

@@ -1,0 +1,493 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 11638583309,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.applyHook(Scenario)"
+            }
+          }
+        ],
+        "line": 74,
+        "name": "Login using valid username and valid password and check daily text",
+        "description": "",
+        "id": "login-into-pregnancy-plus-application;login-using-valid-username-and-valid-password-and-check-daily-text;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 167128797,
+              "error_message": "org.openqa.selenium.WebDriverException: No command or response codec has been defined. Unable to proceed\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:25:53\u0027\nSystem info: host: \u0027MACHINE-102\u0027, ip: \u0027192.168.5.102\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_161\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:148)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat core.generic.WrapperFunctions.mobileClick(WrapperFunctions.java:848)\r\n\tat com.face.pageFactory.PPlusLoginPage.clickOnNoLoginBtn(PPlusLoginPage.java:26)\r\n\tat com.face.stepDefinitions.PPlusLogin.Click_On_Login_button(PPlusLogin.java:27)\r\n\tat ✽.Given Click On Login button(PPlusComparison.feature:31)\r\n",
+              "status": "failed"
+            },
+            "line": 31,
+            "name": "Click On Login button",
+            "match": {
+              "location": "PPlusLogin.Click_On_Login_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "Click on Ok Button",
+            "match": {
+              "location": "PPlusLogin.clickOnOkButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "Enter the User Name dev_qa@email.com",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dev_qa@email.com",
+                  "offset": 20
+                }
+              ],
+              "location": "PPlusLogin.enterUserName(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "Enter the Password 12345678",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12345678",
+                  "offset": 19
+                }
+              ],
+              "location": "PPlusLogin.enterPassword(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "Click on Continue Button",
+            "match": {
+              "location": "PPlusLogin.clickOnContinueButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "Click on More tab",
+            "match": {
+              "location": "PPlusMore.click_on_More_tab()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "Click on Hospital Bag tab",
+            "match": {
+              "location": "PPlusMore.Click_on_Hospital_Bag_tab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "Click on Mother\u0027s Bag tab",
+            "match": {
+              "location": "PPlusMotherBag.Click_on_Mothers_Bag_tab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "Click on Birth Plan",
+            "match": {
+              "location": "PPlusMotherBag.Click_on_Birth_Plan()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 40,
+            "name": "Click on Book Magazine",
+            "match": {
+              "location": "PPlusMotherBag.Click_on_Book_Magazine()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "Click on Breast Pads",
+            "match": {
+              "location": "PPlusMotherBag.Click_on_Breast_Pads()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 42,
+            "name": "Click on My Items tab",
+            "match": {
+              "location": "PPlusShop.Click_on_My_Items_tab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 43,
+            "name": "Enter the text in Add your item here text box Shoping",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Shoping",
+                  "offset": 46
+                }
+              ],
+              "location": "PPlusMotherBag.Enter_the_text_in_Add_your_item_here_text_box(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 44,
+            "name": "Deselects checkbox Birth Plan",
+            "match": {
+              "location": "PPlusMotherBag.Deselects_checkbox_Birth_Plan()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 45,
+            "name": "Deselects checkbox Book Magazine",
+            "match": {
+              "location": "PPlusMotherBag.Deselects_checkbox_Book_Magazine()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 46,
+            "name": "Deselects checkbox Breast Pads",
+            "match": {
+              "location": "PPlusMotherBag.Deselects_checkbox_Breast_Pads()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 47,
+            "name": "Click on Back arrow",
+            "match": {
+              "location": "PPlusMotherBag.Click_on_Back_arrow()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 49,
+            "name": "Click on Partners bag tab",
+            "match": {
+              "location": "PPlusPartnerBag.Click_on_Partners_bag_tab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 50,
+            "name": "Click on book Magazine tab",
+            "match": {
+              "location": "PPlusPartnerBag.Click_on_book_Magazine_tab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 51,
+            "name": "Click on Change of Cloths",
+            "match": {
+              "location": "PPlusPartnerBag.Click_on_Change_of_Cloths()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 52,
+            "name": "Click on Comfortable Shoes",
+            "match": {
+              "location": "PPlusPartnerBag.Click_on_Comfortable_Shoes()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 53,
+            "name": "Click on My Items tab",
+            "match": {
+              "location": "PPlusShop.Click_on_My_Items_tab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 54,
+            "name": "Enter the text in Add your item here text box Shoping",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Shoping",
+                  "offset": 46
+                }
+              ],
+              "location": "PPlusMotherBag.Enter_the_text_in_Add_your_item_here_text_box(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 55,
+            "name": "Click on Deselects checkbox Book Magazine",
+            "match": {
+              "location": "PPlusPartnerBag.Click_on_Deselects_checkbox_Book_Magazine()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 56,
+            "name": "Click on Deselects checkbox Change of Cloths",
+            "match": {
+              "location": "PPlusPartnerBag.Click_on_Deselects_checkbox_Change_of_Cloths()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 57,
+            "name": "Click on Deselects checkbox Comfortable Shoes",
+            "match": {
+              "location": "PPlusPartnerBag.Click_on_Deselects_checkbox_Comfortable_Shoes()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 58,
+            "name": "Click on Back arrow",
+            "match": {
+              "location": "PPlusMotherBag.Click_on_Back_arrow()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 60,
+            "name": "Click on Babys bag tab",
+            "match": {
+              "location": "PPlusBabyBag.Click_on_Babys_bag_tab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 61,
+            "name": "Click on Three in All tab",
+            "match": {
+              "location": "PPlusBabyBag.Click_on_Three_in_All_tab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 62,
+            "name": "Click on Three Muslin Cloths",
+            "match": {
+              "location": "PPlusBabyBag.Click_on_Three_Muslin_Cloths()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 63,
+            "name": "Click on Bibs tab",
+            "match": {
+              "location": "PPlusBabyBag.Click_on_Bibs_tab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 64,
+            "name": "Click on My Items tab",
+            "match": {
+              "location": "PPlusShop.Click_on_My_Items_tab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 65,
+            "name": "Enter the text in Add your item here text box Shoping",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Shoping",
+                  "offset": 46
+                }
+              ],
+              "location": "PPlusMotherBag.Enter_the_text_in_Add_your_item_here_text_box(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 66,
+            "name": "Click on Deselects checkbox Three in All tab",
+            "match": {
+              "location": "PPlusBabyBag.Click_on_Deselects_checkbox_Three_in_All_tab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 67,
+            "name": "Click on Deselects checkbox Three Muslin Cloths",
+            "match": {
+              "location": "PPlusBabyBag.Click_on_Deselects_checkbox_Three_Muslin_Cloths()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 68,
+            "name": "Click on Deselects checkbox Muslin Cloths",
+            "match": {
+              "location": "PPlusBabyBag.Click_on_Deselects_checkbox_Muslin_Cloths()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 69,
+            "name": "Click on Back arrow",
+            "match": {
+              "location": "PPlusMotherBag.Click_on_Back_arrow()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 28,
+            "name": "@PPlus_Hospital_Bag"
+          }
+        ]
+      }
+    ],
+    "name": "Login into Pregnancy Plus Application",
+    "description": "",
+    "id": "login-into-pregnancy-plus-application",
+    "keyword": "Feature",
+    "uri": "PPlusComparison.feature"
+  }
+]

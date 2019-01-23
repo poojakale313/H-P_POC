@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-    	dryRun = true,
+//    	dryRun = true,
 		strict = true,
 		features = {"src/test/java/com/face/features"},
 		glue = {"core.Hooks", "com.face.stepDefinitions"},

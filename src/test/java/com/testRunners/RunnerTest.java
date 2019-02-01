@@ -11,7 +11,7 @@ import cucumber.api.junit.Cucumber;
 		strict = true,
 		features = {"src/test/java/com/face/features"},
 		glue = {"core.Hooks", "com.face.stepDefinitions"},
-		tags = {"@PPlus_Hospital_Bag"},
+		tags = {"@Baby,@More"},
 		monochrome = true,
 		
 		format = {

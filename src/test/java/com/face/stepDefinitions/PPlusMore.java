@@ -16,10 +16,6 @@ public class PPlusMore {
 	private PPlusMorePage objPPlusMorePage = new PPlusMorePage();
 	
 
-	@Then("^Click on More tab$")
-	public void click_on_More_tab() throws InterruptedException {
-		Assert.assertTrue(objPPlusMorePage.clickMoreTabBtn());
-	}
 	
 	@Then("^Click on shop tab$")
 	public void click_on_shop_tab() throws InterruptedException {
@@ -34,6 +30,11 @@ public class PPlusMore {
 	@Then("^Click on Contractions tab$")
 	public void Click_on_Contractions_tab() throws InterruptedException {
 		Assert.assertTrue(objPPlusMorePage.clickOnContractionTab());
+	}
+	
+	@Then("^Click on Kick Counter tab$")
+	public void click_On_Counter_Icon() throws InterruptedException {
+		Assert.assertTrue(objPPlusMorePage.clickOnCounterIcon());
 	}
 	
 }

@@ -15,12 +15,7 @@ public class PPlusPartnerBag {
 	
 	private PPlusPartnerBagPage objPPlusPartnerBagPage = new PPlusPartnerBagPage();
 	
-	@Then("^Click on Partners bag tab$")
-	public void Click_on_Partners_bag_tab() throws Throwable {
-		Thread.sleep(2000);
-		Assert.assertTrue(objPPlusPartnerBagPage.clickOnPartnersBag());
-	}
-
+	
 	@Then("^Click on book Magazine tab$")
 	public void Click_on_book_Magazine_tab() throws Throwable {
 		Assert.assertTrue(objPPlusPartnerBagPage.clickOnPartnersBookMagazine());
@@ -51,5 +46,9 @@ public class PPlusPartnerBag {
 		Assert.assertTrue(objPPlusPartnerBagPage.checkboxComfortableShoes());
 	}
 
+	@Then("^Click long press on Comfortable Shoes$")
+	public void Click_long_press_on_Comfortable_Shoes() throws Throwable {
+		Assert.assertTrue(objPPlusPartnerBagPage.ClicklongpressonComfortableShoes(null));
+	}
 
 }

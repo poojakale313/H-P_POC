@@ -5,8 +5,10 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
+import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
@@ -1091,5 +1093,17 @@ public class WrapperFunctions {
 //	
 //	}
 	
+	 public void selectEnter() {
+		  try {
+		   StepBase2.appiumDriver.getKeyboard().sendKeys(Keys.DOWN);
+		//   ((Object) StepBase2.appiumDriver).pressKeyCode(AndroidKeyCode.SPACE, AndroidKeyMetastate.META_SHIFT_ON);
+		   Map<String, Object> EnterKeyEvent  = new HashMap<>();
+		   EnterKeyEvent.put("key", "Done"); 
+		//   StepBase2.appiumDriver.getKeyboard().pressKey("Done");
+		//   EnterKeyEvent.putIfAbsent("key", "6");
+		  } catch (Exception e) {
+		   System.out.println("Step Failed - Unable to click enter");
+		  }
+		 }
 	
 }

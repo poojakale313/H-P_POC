@@ -74,4 +74,16 @@ public class PPlusShopPage extends StepBase2{
 //			WrapperFunctions.longpress(clickonlongpress2dwashcloths);
 		}
 		
+		public boolean clickOndeletebtn() throws InterruptedException {
+			Thread.sleep(2000);
+			return objWrapperFunctions.mobileClick(deleteontab);
+
+		}
+		
+		public boolean clickOnpopupdeletetab() throws InterruptedException {
+			Thread.sleep(2000);
+			return objWrapperFunctions.mobileClick(clickonpopupdelete);
+
+		}
+		
 }

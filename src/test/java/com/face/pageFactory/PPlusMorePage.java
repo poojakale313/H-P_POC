@@ -12,19 +12,16 @@ public class PPlusMorePage {
 	private Utilities objUtilities = new Utilities();
 	private StepBase2 objStepBase2 = new StepBase2();
 	
-	//MoreTab
-	By clickonmoretab = By.xpath("//android.widget.FrameLayout[@content-desc=\"More\"]/android.widget.ImageView");
+	
     //Shopping
 	By clickonshoptab = By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.ImageView");
 	//Hospital Bag
     By hospitalbag = By.xpath("//*[contains(@text,'Hospital Bag')]");
 	//Contraction
     By contractiontab = By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[4]/android.view.ViewGroup/android.widget.ImageView");
-	
-	public boolean clickMoreTabBtn() throws InterruptedException{
-		Thread.sleep(5000);
-		return objWrapperFunctions.mobileClick(clickonmoretab);
-	}
+	//kick Counter
+    By btnClickCounter = By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[3]/android.view.ViewGroup/android.widget.ImageView");
+
 
 	public boolean clickOnShopTab() {
 		return objWrapperFunctions.mobileClick(clickonshoptab);
@@ -42,4 +39,9 @@ public class PPlusMorePage {
 
 	}
 
+	public boolean clickOnCounterIcon(){
+		return objWrapperFunctions.mobileClick(btnClickCounter);
+	}
+	
+	
 }

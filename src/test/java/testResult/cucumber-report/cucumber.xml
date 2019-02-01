@@ -1,59 +1,232 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="11.805712">
-<testcase classname="Login into Pregnancy Plus Application" name="Login using valid username and valid password and check daily text" time="11.805712">
-<failure message="org.openqa.selenium.WebDriverException: No command or response codec has been defined. Unable to proceed&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'&#10;System info: host: 'MACHINE-102', ip: '192.168.5.102', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_161'&#10;Driver info: driver.version: RemoteWebDriver&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:148)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)&#13;&#10;&#9;at org.openqa.selenium.By$ById.findElement(By.java:188)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at core.generic.WrapperFunctions.mobileClick(WrapperFunctions.java:848)&#13;&#10;&#9;at com.face.pageFactory.PPlusLoginPage.clickOnNoLoginBtn(PPlusLoginPage.java:26)&#13;&#10;&#9;at com.face.stepDefinitions.PPlusLogin.Click_On_Login_button(PPlusLogin.java:27)&#13;&#10;&#9;at ✽.Given Click On Login button(PPlusComparison.feature:31)&#13;&#10;"><![CDATA[Given Click On Login button.................................................failed
-When Click on Ok Button.....................................................skipped
-When Enter the User Name dev_qa@email.com...................................skipped
-When Enter the Password 12345678............................................skipped
-When Click on Continue Button...............................................skipped
-When Click on More tab......................................................skipped
-Then Click on Hospital Bag tab..............................................skipped
-Then Click on Mother's Bag tab..............................................skipped
-Then Click on Birth Plan....................................................skipped
-Then Click on Book Magazine.................................................skipped
-Then Click on Breast Pads...................................................skipped
-Then Click on My Items tab..................................................skipped
-Then Enter the text in Add your item here text box Shoping..................skipped
-Then Deselects checkbox Birth Plan..........................................skipped
-Then Deselects checkbox Book Magazine.......................................skipped
-Then Deselects checkbox Breast Pads.........................................skipped
-Then Click on Back arrow....................................................skipped
-Then Click on Partners bag tab..............................................skipped
-Then Click on book Magazine tab.............................................skipped
-Then Click on Change of Cloths..............................................skipped
-Then Click on Comfortable Shoes.............................................skipped
-Then Click on My Items tab..................................................skipped
-Then Enter the text in Add your item here text box Shoping..................skipped
-Then Click on Deselects checkbox Book Magazine..............................skipped
-Then Click on Deselects checkbox Change of Cloths...........................skipped
-Then Click on Deselects checkbox Comfortable Shoes..........................skipped
-Then Click on Back arrow....................................................skipped
-Then Click on Babys bag tab.................................................skipped
-Then Click on Three in All tab..............................................skipped
-Then Click on Three Muslin Cloths...........................................skipped
-Then Click on Bibs tab......................................................skipped
-Then Click on My Items tab..................................................skipped
-Then Enter the text in Add your item here text box Shoping..................skipped
-Then Click on Deselects checkbox Three in All tab...........................skipped
-Then Click on Deselects checkbox Three Muslin Cloths........................skipped
-Then Click on Deselects checkbox Muslin Cloths..............................skipped
-Then Click on Back arrow....................................................skipped
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="851.071242">
+<testcase classname="Verification of Daily, Weekly, BabyNames" name="Login using valid username and valid password and check daily text" time="209.601006">
+<system-out><![CDATA[Given Click On Login button.................................................passed
+When Click on Ok Button.....................................................passed
+When Enter the User Name dev_qa@email.com...................................passed
+When Enter the Password 12345678............................................passed
+When Click on Continue Button...............................................passed
+When Click on Baby Menu tab.................................................passed
+When Click on daily tab.....................................................passed
+When Get text to verify.....................................................passed
+When Click on Back arrow....................................................passed
+Then Content get displayed for particular day...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of Daily, Weekly, BabyNames" name="Login using valid username and valid password and check Baby Names module from Baby menu" time="136.094974">
+<system-out><![CDATA[Given Click On Login button.................................................passed
+When Click on Ok Button.....................................................passed
+When Enter the User Name dev_qa@email.com...................................passed
+When Enter the Password 12345678............................................passed
+When Click on Continue Button...............................................passed
+When Click on Baby Menu tab.................................................passed
+When Click on Baby Name tab.................................................passed
+When Click on American names................................................passed
+When Click on Noah..........................................................passed
+When Click on Liam..........................................................passed
+When Click on Mason.........................................................passed
+When Click on Jacob.........................................................passed
+When Click on gender icon...................................................passed
+When Click on Emma..........................................................passed
+When Click on Olivia........................................................passed
+When Click on Sophia........................................................passed
+When Click on Isabella......................................................passed
+When Click on Back arrow....................................................passed
+When Click on My favourites tab.............................................passed
+When Click on heart icon of name1...........................................passed
+When Click on No............................................................passed
+When Click on heart icon of name1...........................................passed
+When Click on Yes...........................................................passed
+When Swipe name1 to right or left to delete.................................passed
+When Click on Back arrow....................................................passed
+Then Baby Names are added and selected from country listing into favourite listing.passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of HospitalBags, Shop, Contraction, KickCounter" name="Login using valid username and valid password and check daily text" time="141.193169">
+<failure message="org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 30.34 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'&#10;System info: host: 'Machine-126', ip: '192.168.250.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_191'&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Capabilities [{app=C:\Users\user\eclipse-workspace\PPlus_5.0\APK_File\Pregnancy_liteRelease-5.0Dev-RC27.apk, appPackage=com.hp.pregnancy.lite, deviceScreenSize=1440x2560, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.hp.pregnancy.lite, appWaitActivity=com.hp.pregnancy.lite.onboarding.SplashScreenActivity, databaseEnabled=false, version=7.1.0, deviceName=192.168.250.101:5555, platform=LINUX, deviceUDID=192.168.250.101:5555, appActivity=com.hp.pregnancy.lite.onboarding.SplashScreenActivity, desired={app=C:\Users\user\eclipse-workspace\PPlus_5.0\APK_File\Pregnancy_liteRelease-5.0Dev-RC27.apk, platformName=Android, version=7.1.0, deviceName=Google Nexus 6P}, platformVersion=7.1.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Google Nexus 6P - 7.1.0 - API 25 - 1440x2560, platformName=Android, deviceManufacturer=Genymotion}]&#10;Session ID: 2a754298-cca1-4e6e-9362-5929e6b4e839&#10;*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[3]/android.widget.ImageView}&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)&#13;&#10;&#9;at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:357)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)&#13;&#10;&#9;at core.generic.WrapperFunctions.mobileClick(WrapperFunctions.java:850)&#13;&#10;&#9;at com.face.pageFactory.PPlusMotherBagPage.checkboxBreastPads(PPlusMotherBagPage.java:77)&#13;&#10;&#9;at com.face.stepDefinitions.PPlusMotherBag.Deselects_checkbox_Breast_Pads(PPlusMotherBag.java:53)&#13;&#10;&#9;at ✽.When Deselects checkbox Breast Pads(PPlusMore.feature:21)&#13;&#10;"><![CDATA[Given Click On Login button.................................................passed
+When Click on Ok Button.....................................................passed
+When Enter the User Name dev_qa@email.com...................................passed
+When Enter the Password 12345678............................................passed
+When Click on Continue Button...............................................passed
+When Click on More tab......................................................passed
+When Click on Hospital Bag tab..............................................passed
+When Click on Mother's Bag tab..............................................passed
+When Click on Birth Plan....................................................passed
+When Click on Book Magazine.................................................passed
+When Click on Breast Pads...................................................passed
+When Click on My Items tab..................................................passed
+When Enter the text in Add your item here text box Shoping..................passed
+When Deselects checkbox Birth Plan..........................................passed
+When Deselects checkbox Book Magazine.......................................passed
+When Deselects checkbox Breast Pads.........................................failed
+When Click long press on Birth Plan.........................................skipped
+When Click on delete icon...................................................skipped
+When Click on pop up delete tab.............................................skipped
+When Click on Suggested Button..............................................skipped
+When Click on Book Magazine.................................................skipped
+When Click on Breast Pads...................................................skipped
+When Click on Back arrow....................................................skipped
+When Click on Partners bag tab..............................................skipped
+When Click on book Magazine tab.............................................skipped
+When Click on Change of Cloths..............................................skipped
+When Click on Comfortable Shoes.............................................skipped
+When Click on My Items tab..................................................skipped
+When Enter the text in Add your item here text box Shoping..................skipped
+When Click on Deselects checkbox Book Magazine..............................skipped
+When Click on Deselects checkbox Change of Cloths...........................skipped
+When Click on Deselects checkbox Comfortable Shoes..........................skipped
+When Click long press on Comfortable Shoes..................................skipped
+When Click on delete icon...................................................skipped
+When Click on pop up delete tab.............................................skipped
+When Click on Suggested Button..............................................skipped
+When Click on book Magazine tab.............................................skipped
+When Click on Change of Cloths..............................................skipped
+When Click on Back arrow....................................................skipped
+When Click on Babys bag tab.................................................skipped
+When Click on Three in All tab..............................................skipped
+When Click on Three Muslin Cloths...........................................skipped
+When Click on Bibs tab......................................................skipped
+When Click on My Items tab..................................................skipped
+When Enter the text in Add your item here text box Shoping..................skipped
+When Click on Deselects checkbox Three in All tab...........................skipped
+When Click on Deselects checkbox Three Muslin Cloths........................skipped
+When Click on Deselects checkbox Muslin Cloths..............................skipped
+When Click long press on Three in All.......................................skipped
+When Click on delete icon...................................................skipped
+When Click on pop up delete tab.............................................skipped
+When Click on Suggested Button..............................................skipped
+When Click on Three Muslin Cloths...........................................skipped
+When Click on Bibs tab......................................................skipped
+When Click on Back arrow....................................................skipped
+When Click on Back arrow....................................................skipped
+Then Suggested Items from different hospital bags are added into my items list.skipped
 
 StackTrace:
-org.openqa.selenium.WebDriverException: No command or response codec has been defined. Unable to proceed
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'MACHINE-102', ip: '192.168.5.102', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_161'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:148)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.34 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'Machine-126', ip: '192.168.250.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_191'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=C:\Users\user\eclipse-workspace\PPlus_5.0\APK_File\Pregnancy_liteRelease-5.0Dev-RC27.apk, appPackage=com.hp.pregnancy.lite, deviceScreenSize=1440x2560, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.hp.pregnancy.lite, appWaitActivity=com.hp.pregnancy.lite.onboarding.SplashScreenActivity, databaseEnabled=false, version=7.1.0, deviceName=192.168.250.101:5555, platform=LINUX, deviceUDID=192.168.250.101:5555, appActivity=com.hp.pregnancy.lite.onboarding.SplashScreenActivity, desired={app=C:\Users\user\eclipse-workspace\PPlus_5.0\APK_File\Pregnancy_liteRelease-5.0Dev-RC27.apk, platformName=Android, version=7.1.0, deviceName=Google Nexus 6P}, platformVersion=7.1.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Google Nexus 6P - 7.1.0 - API 25 - 1440x2560, platformName=Android, deviceManufacturer=Genymotion}]
+Session ID: 2a754298-cca1-4e6e-9362-5929e6b4e839
+*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[3]/android.widget.ImageView}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at core.generic.WrapperFunctions.mobileClick(WrapperFunctions.java:848)
-	at com.face.pageFactory.PPlusLoginPage.clickOnNoLoginBtn(PPlusLoginPage.java:26)
-	at com.face.stepDefinitions.PPlusLogin.Click_On_Login_button(PPlusLogin.java:27)
-	at ✽.Given Click On Login button(PPlusComparison.feature:31)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at core.generic.WrapperFunctions.mobileClick(WrapperFunctions.java:850)
+	at com.face.pageFactory.PPlusMotherBagPage.checkboxBreastPads(PPlusMotherBagPage.java:77)
+	at com.face.stepDefinitions.PPlusMotherBag.Deselects_checkbox_Breast_Pads(PPlusMotherBag.java:53)
+	at ✽.When Deselects checkbox Breast Pads(PPlusMore.feature:21)
+]]></failure>
+</testcase>
+<testcase classname="Verification of HospitalBags, Shop, Contraction, KickCounter" name="Login using valid username and valid password and check daily text" time="111.005883">
+<system-out><![CDATA[Given Click On Login button.................................................passed
+When Click on Ok Button.....................................................passed
+When Enter the User Name dev_qa@email.com...................................passed
+When Enter the Password 12345678............................................passed
+When Click on Continue Button...............................................passed
+When Click on More tab......................................................passed
+When Click on shop tab......................................................passed
+When Click on baby care.....................................................passed
+When Click on first Hooded towels...........................................passed
+When Click on first Wash Cloths.............................................passed
+When Click on My Items tab..................................................passed
+When Click on second Hooded towels..........................................passed
+When Click on second Wash Cloths............................................passed
+When Click long press on  2-3 Wash Cloths...................................passed
+When Click on delete icon...................................................passed
+When Click on pop up delete tab.............................................passed
+When Click on Suggested Button..............................................passed
+When Click on second Hooded towels..........................................passed
+When Click on Back arrow....................................................passed
+When Click on Back arrow....................................................passed
+Then Suggested Items from different shopping sections are added into my items list.passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of HospitalBags, Shop, Contraction, KickCounter" name="Login using valid username and valid password and click on Contractions tab" time="135.66202">
+<system-out><![CDATA[Given Click On Login button.................................................passed
+When Click on Ok Button.....................................................passed
+When Enter the User Name dev_qa@email.com...................................passed
+When Enter the Password 12345678............................................passed
+When Click on Continue Button...............................................passed
+When Click on More tab......................................................passed
+When Click on Contractions tab..............................................passed
+When Click on Clock icon to start...........................................passed
+When Click on Alert popup...................................................passed
+When Click on Stop Button...................................................passed
+When Click on OK shown on pop up............................................passed
+When Click on Clock icon to start...........................................passed
+When Click on Stop Button...................................................passed
+When Scroll down to view overview and Contraction Info......................passed
+When Switch the tabs from Last 3 to Last 5 or All...........................passed
+When Swipe any record shown in session history to delete....................passed
+When Click on Back arrow....................................................passed
+Then Added contraction are displayed in session history listing.............passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of HospitalBags, Shop, Contraction, KickCounter" name="Check counter kicks" time="117.51419">
+<failure message="org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 30.47 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'&#10;System info: host: 'Machine-126', ip: '192.168.250.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_191'&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Capabilities [{app=C:\Users\user\eclipse-workspace\PPlus_5.0\APK_File\Pregnancy_liteRelease-5.0Dev-RC27.apk, appPackage=com.hp.pregnancy.lite, deviceScreenSize=1440x2560, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.hp.pregnancy.lite, appWaitActivity=com.hp.pregnancy.lite.onboarding.SplashScreenActivity, databaseEnabled=false, version=7.1.0, deviceName=192.168.250.101:5555, platform=LINUX, deviceUDID=192.168.250.101:5555, appActivity=com.hp.pregnancy.lite.onboarding.SplashScreenActivity, desired={app=C:\Users\user\eclipse-workspace\PPlus_5.0\APK_File\Pregnancy_liteRelease-5.0Dev-RC27.apk, platformName=Android, version=7.1.0, deviceName=Google Nexus 6P}, platformVersion=7.1.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Google Nexus 6P - 7.1.0 - API 25 - 1440x2560, platformName=Android, deviceManufacturer=Genymotion}]&#10;Session ID: 86982187-d99f-4706-ad8c-755da8830c21&#10;*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.appcompat.widget.LinearLayoutCompat/android.widget.ScrollView/android.widget.LinearLayout/android.widget.Button}&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)&#13;&#10;&#9;at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:357)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)&#13;&#10;&#9;at core.generic.WrapperFunctions.mobileClick(WrapperFunctions.java:850)&#13;&#10;&#9;at com.face.pageFactory.PPlusKickCounterPage.clickOnDoneButtonForEndSession(PPlusKickCounterPage.java:54)&#13;&#10;&#9;at com.face.stepDefinitions.PPlusKickCounter.click_On_Done_Button_For_EndSession(PPlusKickCounter.java:45)&#13;&#10;&#9;at ✽.When Click on DONE shown on session ended pop up(PPlusMore.feature:138)&#13;&#10;"><![CDATA[Given Click On Login button.................................................passed
+When Click on Ok Button.....................................................passed
+When Enter the User Name dev_qa@email.com...................................passed
+When Enter the Password 12345678............................................passed
+When Click on Continue Button...............................................passed
+When Click on More tab......................................................passed
+When Click on Kick Counter tab..............................................passed
+When Tap on the foot icon for 2 times.......................................passed
+When Click on Finish button.................................................passed
+When Click on NO shown on alert pop up......................................passed
+When Click on Finish button.................................................passed
+When Click on YES shown on alert pop up.....................................passed
+When Click on DONE shown on session ended pop up............................failed
+When Click on Back arrow....................................................skipped
+When Tap on the foot icon for 10 times......................................skipped
+When Click on Undo button...................................................skipped
+When Click on NO button shown in alert pop up...............................skipped
+When Click on Undo button...................................................skipped
+When Click on YES button shown in alert pop up..............................skipped
+When Tap on the foot icon for 2 times.......................................skipped
+When Click on DONE shown on session saved pop up............................skipped
+When Click on Back arrow....................................................skipped
+When Click on History.......................................................skipped
+When Swipe any entry to delete it...........................................skipped
+When Click on Back arrow....................................................skipped
+Then Kick counts are displayed in session history listing...................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.47 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'Machine-126', ip: '192.168.250.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_191'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=C:\Users\user\eclipse-workspace\PPlus_5.0\APK_File\Pregnancy_liteRelease-5.0Dev-RC27.apk, appPackage=com.hp.pregnancy.lite, deviceScreenSize=1440x2560, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.hp.pregnancy.lite, appWaitActivity=com.hp.pregnancy.lite.onboarding.SplashScreenActivity, databaseEnabled=false, version=7.1.0, deviceName=192.168.250.101:5555, platform=LINUX, deviceUDID=192.168.250.101:5555, appActivity=com.hp.pregnancy.lite.onboarding.SplashScreenActivity, desired={app=C:\Users\user\eclipse-workspace\PPlus_5.0\APK_File\Pregnancy_liteRelease-5.0Dev-RC27.apk, platformName=Android, version=7.1.0, deviceName=Google Nexus 6P}, platformVersion=7.1.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Google Nexus 6P - 7.1.0 - API 25 - 1440x2560, platformName=Android, deviceManufacturer=Genymotion}]
+Session ID: 86982187-d99f-4706-ad8c-755da8830c21
+*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.appcompat.widget.LinearLayoutCompat/android.widget.ScrollView/android.widget.LinearLayout/android.widget.Button}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at core.generic.WrapperFunctions.mobileClick(WrapperFunctions.java:850)
+	at com.face.pageFactory.PPlusKickCounterPage.clickOnDoneButtonForEndSession(PPlusKickCounterPage.java:54)
+	at com.face.stepDefinitions.PPlusKickCounter.click_On_Done_Button_For_EndSession(PPlusKickCounter.java:45)
+	at ✽.When Click on DONE shown on session ended pop up(PPlusMore.feature:138)
 ]]></failure>
 </testcase>
 </testsuite>

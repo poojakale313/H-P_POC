@@ -15,10 +15,7 @@ public class PPlusBabyBag {
 	
 	private PPlusBabyBagPage objPPlusBabyBagPage = new PPlusBabyBagPage();
 	
-	@Then("^Click on Babys bag tab$")
-	public void Click_on_Babys_bag_tab() throws Throwable {
-		Assert.assertTrue(objPPlusBabyBagPage.clickOnBabysBag());
-	}
+	
 
 	@Then("^Click on Three in All tab$")
 	public void Click_on_Three_in_All_tab() throws Throwable {
@@ -50,5 +47,8 @@ public class PPlusBabyBag {
 		Assert.assertTrue(objPPlusBabyBagPage.checkboxBibsTab());
 	}
 
-	
+	@Then("^Click long press on Three in All$")
+	public void click_long_press_on_Three_in_All() throws Throwable {
+		Assert.assertTrue(objPPlusBabyBagPage.ClicklongpressonThreeInAll(null));
+	}
 }

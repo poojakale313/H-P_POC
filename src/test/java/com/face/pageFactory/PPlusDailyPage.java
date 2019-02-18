@@ -37,7 +37,7 @@ public class PPlusDailyPage {
 public boolean GetTextToVerify() throws IOException, InterruptedException {
 		
 
-		for (int j = 39;  j >= -10 ; j = j-4) 
+		for (int j = 38;  j >= -10 ; j = j-4) 
 		{
 			System.out.println(j);
 			if (j >= 2) {

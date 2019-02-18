@@ -66,7 +66,7 @@ Feature: Verification of HospitalBags, Shop, Contraction, KickCounter
       | dev_qa@email.com | 12345678 | Shoping   |
 
   #PPlus_Shop
-  @More
+  @More1
   Scenario Outline: Login using valid username and valid password and check daily text
     Given Click On Login button
     When Click on Ok Button
@@ -95,7 +95,7 @@ Feature: Verification of HospitalBags, Shop, Contraction, KickCounter
       | dev_qa@email.com | 12345678 |
 
   #Contractions
-  @More
+  @More1
   Scenario Outline: Login using valid username and valid password and click on Contractions tab
     Given Click On Login button
     When Click on Ok Button
@@ -121,7 +121,7 @@ Feature: Verification of HospitalBags, Shop, Contraction, KickCounter
       | dev_qa@email.com | 12345678 |
 
   #KickCounter
-  @More
+  @More1
   Scenario Outline: Check counter kicks
     Given Click On Login button
     When Click on Ok Button
